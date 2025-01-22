@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#content {
+    height: 1920px;
+    width: 1080px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+#content #mappa {
+    height: 1913px;
+    width: 409px;
+    overflow: hidden;
+    /*background-image: url("../asset/fiera.png");*/
+}
+#content #mappa img {
+    height: 1913px;
+    width: 409px;
+    display: none;
+}
+
+#content #mappa img#mappa_fiera {
+    display: block;
+}
+#content #lista {
+    height: 1920px;
+    width: calc(1080px - 409px);
+}
+#myInput {
+    /* background-image: url('/css/searchicon.png'); Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: calc(1080px - 409px - 62px); /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    position: fixed;
+}
+button {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin-top: 44px;
+    height: calc(1920px - 44px);
+    width: calc(1080px - 409px);
+    overflow-y: scroll;
+}
+
+#myUL li {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    display: flex;
+}
+#myUL li:nth-child(odd) {
+    background-color: #fff;
+}
+#myUL li a {
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    width: -webkit-fill-available;
+    font-family: sans-serif;
+}
+#myUL li span {
+    float: right;
+    width: 70px;
+    background: #013b52;
+    font-weight: bold;
+    font-family: sans-serif;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+}
+#myUL li a:hover {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+#myUL li a:focus, #myUL li a.selected {
+    background-color: #013b52;
+    color: #fff;
+}

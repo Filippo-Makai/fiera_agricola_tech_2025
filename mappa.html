@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <title>Mappa Fiera Agricola Tech</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header></header>
+        <div id="content">
+            <section id="mappa">
+                <img id="mappa_fiera" src="asset/fiera.png">
+                <img id="B2" src="asset/b2.png">
+                <img id="B3" src="asset/b3.png">
+                <img id="B2-B3" src="asset/b2-b3.png">
+                <img id="B4" src="asset/b4.png">
+                <img id="C1" src="asset/c1.png">
+                <img id="C2" src="asset/c2.png">
+                <img id="C2-C3" src="asset/c2-c3.png">
+                <img id="C3" src="asset/b3.png">
+                <img id="C4" src="asset/c4.png">
+                <img id="D1" src="asset/d1.png">
+                <img id="D4" src="asset/d4.png">
+                <img id="E1" src="asset/e1.png">
+                <img id="E2" src="asset/e2.png">
+                <img id="E2-E3" src="asset/e2-e3.png">
+                <img id="E3" src="asset/e3.png">
+                <img id="E4" src="asset/e4.png">
+                <img id="F2" src="asset/f2.png">
+                <img id="F3" src="asset/f3.png">
+            </section>
+            <section id="lista">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cerca l'espositore">
+                <button onclick="clearInput()">x</button>
+
+                <ul id="myUL">
+                <li onclick="selectMap(this, 'E3')"><a href="#">2G ITALIA SRL</a><span>E3</span></li>
+                <li onclick="selectMap(this, 'F2')"><a href="#">AB ENERGY SPA</a><span>F2</span></li>
+                <li onclick="selectMap(this, 'E4')"><a href="#">ACQUAFERT S.R.L.</a><span>E4</span></li>
+                <li onclick="selectMap(this, 'D1')"><a href="#">AERMATICA3D SRL</a><span>D1</span></li>
+                <li onclick="selectMap(this, 'D1')"><a href="#">AGERTECH SRL</a><span>D1</span></li>
+                <li onclick="selectMap(this, 'C4')"><a href="#">AGRICOBOTS S.R.L.</a><span>C4</span></li>
+                <li onclick="selectMap(this, 'C3')"><a href="#">AGRICOLUS</a><span>C3</span></li>
+                <li onclick="selectMap(this, 'F2')"><a href="#">AGRIKOMP ITALIA SRL</a><span>F2</span></li>
+                <li onclick="selectMap(this, 'C3')"><a href="#">AGROBIT S.R.L.</a><span>C3</span></li>
+                <li onclick="selectMap(this, 'C4')"><a href="#">ARVATEC SRL</a><span>C4</span></li>
+                <li onclick="selectMap(this, 'B4')"><a href="#">ASPEL SRL</a><span>B4</span></li>
+                <li onclick="selectMap(this, 'B2-B3')"><a href="#">ASSOCIAZIONE IBMA ITALIA</a><span>B2-B3</span></li>
+                <li onclick="selectMap(this, 'B2')"><a href="#">ASSOCIAZIONE ITALIANA AGRIVOLTAICO SOSTENIBILE - AIAS</a><span>B2</span></li>
+                <li onclick="selectMap(this, 'B2')"><a href="#">ASSOCIAZIONE ITALIANA SEMENTI - ASSOSEMENTI</a><span>B2</span></li>
+                <li onclick="selectMap(this, 'C1')"><a href="#">AVMAP SRL CON SOCIO UNICO</a><span>C1</span></li>
+                <li onclick="selectMap(this, 'D4')"><a href="#">AVT AIRBORNE SENSING ITALIA SRL</a><span>D4</span></li>
+                <li onclick="selectMap(this, 'C3')"><a href="#">BASF ITALIA</a><span>C3</span></li>
+                <li onclick="selectMap(this, 'E4')"><a href="#">BLU DROPS SRL</a><span>E4</span></li>
+                <li onclick="selectMap(this, 'B3')"><a href="#">CBC (EUROPE) S.R.L.</a><span>B3</span></li>
+                <li onclick="selectMap(this, 'C1')"><a href="#">CET ELECTRONICS</a><span>C1</span></li>
+                <li onclick="selectMap(this, 'B2')"><a href="#">CHEMIA S.P.A.</a><span>B2</span></li>
+                <li onclick="selectMap(this, 'B3')"><a href="#">CIA SERVIZI NAZIONALE SRL</a><span>B3</span></li>
+                <li onclick="selectMap(this, 'E2-E3')"><a href="#">CN SERVIZI S.N.C.</a><span>E2-E3</span></li>
+                <li onclick="selectMap(this, 'C4')"><a href="#">COBO SPA</a><span>C4</span></li>
+                <li onclick="selectMap(this, 'D1')"><a href="#">COLDIRETTI</a><span>D1</span></li>
+                <li onclick="selectMap(this, 'C4')"><a href="#">COLLEGIO NAZIONALE DEGLI AGROTECNICI E DEGLI AGROTECNICI LAUREATI</a><span>C4</span></li>
+                <li onclick="selectMap(this, 'B3')"><a href="#">COLLEGIO NAZIONALE DEI PERITI AGRARI E PERITI AGRARI LAUREATI</a><span>B3</span></li>
+                <li onclick="selectMap(this, 'D4')"><a href="#">CONFAGRICOLTURA</a><span>D4</span></li>
+                <li onclick="selectMap(this, 'C2')"><a href="#">CONSIGLIO DELL'ORDINE NAZIONALE DEI DOTTORI AGRONOMI E DEI DOTTORI FORESTALI</a><span>C2</span></li>
+                <li onclick="selectMap(this, 'C4')"><a href="#">CONSORZIO ITALBIOTEC</a><span>C4</span></li>
+                <li onclick="selectMap(this, 'F3')"><a href="#">CONSORZIO ITALIANO BIOGAS E GASSIFICAZIONE</a><span>F3</span></li>
+                <li onclick="selectMap(this, 'C2')"><a href="#">DATRONIX SRL</a><span>C2</span></li>
+                <li onclick="selectMap(this, 'B4')"><a href="#">ECOFARM STORTI</a><span>B4</span></li>
+                <li onclick="selectMap(this, 'F2')"><a href="#">EDAGRICOLE | TECNICHE NUOVE MEDIA</a><span>F2</span></li>
+                <li onclick="selectMap(this, 'B2')"><a href="#">EDIZIONI L'INFORMATORE AGRARIO</a><span>B2</span></li>
+                <li onclick="selectMap(this, 'E1')"><a href="#">ENERGY3000 SRL</a><span>E1</span></li>
+                <li onclick="selectMap(this, 'E2')"><a href="#">ENVITEC BIOGAS SRL</a><span>E2</span></li>
+                <li onclick="selectMap(this, 'E2')"><a href="#">EUROAUTOMATIONS SRL</a><span>E2</span></li>
+                <li onclick="selectMap(this, 'C2')"><a href="#">FINAPP SRL</a><span>C2</span></li>
+                <li onclick="selectMap(this, 'E4')"><a href="#">FRANKLIN ELECTRIC S.R.L.</a><span>E4</span></li>
+                <li onclick="selectMap(this, 'B2')"><a href="#">GOWAN ITALIA SRL</a><span>B2</span></li>
+                <li onclick="selectMap(this, 'B2')"><a href="#">GREEN TEAM INTERNATIONAL</a><span>B2</span></li>
+                <li onclick="selectMap(this, 'F3')"><a href="#">GREENTECH PROJECTS SRL</a><span>F3</span></li>
+                <li onclick="selectMap(this, 'E2')"><a href="#">GRUPPO PEVERONI SRL</a><span>E2</span></li>
+                <li onclick="selectMap(this, 'F2')"><a href="#">HILE SRL</a><span>F2</span></li>
+                <li onclick="selectMap(this, 'C3')"><a href="#">HORTA SRL</a><span>C3</span></li>
+
+
+<!--
+
+HUBFARM SPA D4
+IGREEN SYSTEM SRL E1
+IMAGE LINE S.R.L. C2-C3
+INGENIUM RENEWABLES SRL E2
+INNIO JENBACHER GMBH F2
+INNOVO RENEWABLES SPA E3
+INSOLIGHT B2
+INTERGEN SPA E3
+ITALKERO B4
+KOPPERT ITALIA SRL B3
+LUALTEK S.R.L. C1
+MAFA BIOSCIENCE B3
+MANICA S.P.A. B3
+METOS ITALIA SRL C3
+MICRO BIOGAS ITALIA SRL E3
+MSD ANIMAL HEALTH SRL F3
+NATURAL TECHNOLOGIES
+ITALIA B2
+NENUFAR SAS E3
+NETSENS D1
+NEXT2SUN GMBH B2
+ORDINE DEI DOTTORI
+AGRONOMI E DEI DOTTORI
+FORESTALI DELLA PROVINCIA
+DI VERONA
+OROBIX LIFE SRL B2
+PIETRO FIORENTINI S.P.A. F3
+PLANTVOICE SRL SB C2
+PRECISION TESTING SRL C1
+PRODEVAL ITALIA SRL
+UNIPERSONALE E3
+REM TEC SRL B2
+RENFIC SRL B2
+ROTA GUIDO F3
+S.I.T.I.P. SRL C4
+SCALIGERA DRONE
+SOLUTIONS C2-C3
+SENCROP SAS C1
+SENEC ITALIA SRL E2
+SENTEK SRL C2
+SERBIOS SRL A SOCIO UNICO SOLAX POWER BV E4
+SPL ENERGETICA SRL E1
+SUN'AGRI ITALIA E2
+TECNO PROJECT
+INDUSTRIALE F2
+TECNOSYSTEM SRL C2
+TEDOM A.S. E3
+TESSARI ENERGIA SPA F3
+THE TORO COMPANY D4
+VALSOVI E1
+VENETO AGRICOLTURA
+- AGENZIA VENETA PER
+L'INNOVAZIONE NEL SETTORE
+PRIMARIO
+VIP ENERGY E4
+VOLT INFRASTRUCTURE SRL E1
+WISECONN ITALY SRL C3
+XEDA ITALIA SRL B2
+XFARM TECHNOLOGIES C2
+
+-->
+                </ul>
+            </section>
+        </div>
+        <footer></footer>
+    </body>
+</html>
