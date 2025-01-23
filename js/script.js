@@ -26,7 +26,11 @@ function selectMap(elem, event) {
     let this_elem = document.getElementById(event);
     let a = document.querySelectorAll('li a');
     let elemA = elem.children[0];
-
+  console.log(elemA);
+  // clear if selected
+  if (elemA.classList.contains("selected")) {
+    clearInput();
+  } else {
     //mappa
     for (const child of mappa.children) {
         child.style.display = "none";
@@ -41,14 +45,15 @@ function selectMap(elem, event) {
     /*link = document.this;
     console.log(elem);
     elem.classList.add("selected");*/
-    
+    }
     
 }
 
 function clearInput() {
     let mappa = document.getElementById("mappa");
     let input = document.getElementById('myInput');
-    let li = document.getElementById("myUL").getElementsByTagName('li');
+    let ul = document.getElementById("myUL");
+    let li = ul.getElementsByTagName('li');
 
     //clear input
     input.value = "";
@@ -65,5 +70,3 @@ function clearInput() {
         li[i].children[0].classList.remove('selected')
     }
 }
-
-

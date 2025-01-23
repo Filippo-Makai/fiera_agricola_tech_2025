@@ -92,7 +92,7 @@ button img {
 #myUL li a:hover {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
-#myUL li a:focus, #myUL li a.selected {
+#myUL li a.selected {
     background-color: #013b52;
     color: #fff;
 }
