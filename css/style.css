@@ -30,12 +30,17 @@ header li a {
     color: #1d1d1b;
     text-transform: uppercase;
 }
-/* mappa */
+header li a#menu-active {
+    border-bottom: solid 5px #77b729;
+}
 #content {
     height: calc(1920px - 100px);
     width: 1080px;
     overflow: hidden;
     display: flex;
+}
+/* mappa */
+#content.mappa {
     flex-direction: row;
 }
 #content #mappa {
@@ -124,4 +129,53 @@ button img {
 #myUL li a.selected {
     background-color: #013b52;
     color: #fff;
+}
+
+/* programma */
+#content.programma {
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 40px;
+    width: calc(1080px - 80px);
+    font-family: sans-serif;
+}
+.programma section {
+    margin: 20px 0;
+    padding: 20px;
+}
+#content.programma h1 {
+    text-align: center;
+}
+#content.programma h2 {
+    text-align: center;
+}
+#content.programma h3 {
+    margin-top: 0;
+    line-height: 1.5;
+}
+#content.programma h3 span {
+    margin-right: 20px;
+    font-weight: 300;
+}
+.programma section h5 {
+    margin: 0;
+}
+.programma section p {
+    margin-bottom: 0;
+}
+.programma .blu {
+    background-color: #0000ff28;
+    border-bottom: solid 2px blue;
+}
+.programma .verde {
+    background-color: #00800028;
+    border-bottom: solid 2px green;
+}
+.programma .giallo {
+    background-color: #ffff0028;
+    border-bottom: solid 2px yellow;
+}
+.programma .arancio {
+    background-color: #ffa50028;
+    border-bottom: solid 2px orange;
 }
