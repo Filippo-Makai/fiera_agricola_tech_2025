@@ -63,34 +63,34 @@ header li a#menu-active {
     width: calc(1080px - 409px);
 }
 #myInput {
-    /* background-image: url('/css/searchicon.png'); Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: calc(1080px - 409px - 62px); /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: calc(1080px - 409px - 62px);
+    font-size: 40px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
     position: fixed;
+    text-transform: uppercase;
 }
 button {
     position: fixed;
-    right: 11px;
-    top: 106px;
+    right: 20px;
+    top: 110px;
     background: none;
     border: none;
 }
 
 button img {
-    width: 30px;
+    width: 50px;
 }
 
 #myUL {
     /* Remove default list styling */
     list-style-type: none;
     padding: 0;
-    margin-top: 44px;
-    height: calc(1920px - 44px);
+    margin-top: 72px;
+    height: calc(1920px - 72px);
     width: calc(1080px - 409px);
     overflow-y: scroll;
 }
@@ -138,6 +138,7 @@ button img {
     padding: 40px;
     width: calc(1080px - 80px);
     font-family: sans-serif;
+    height: calc(1920px - 180px);
 }
 .programma section {
     margin: 20px 0;
@@ -162,6 +163,8 @@ button img {
 }
 .programma section p {
     margin-bottom: 0;
+    text-align: right;
+    text-transform: uppercase;
 }
 .programma .blu {
     background-color: #0000ff28;
@@ -178,4 +181,8 @@ button img {
 .programma .arancio {
     background-color: #ffa50028;
     border-bottom: solid 2px orange;
+}
+/* rating */
+#content.valutaci{
+    flex-direction: column;
 }
